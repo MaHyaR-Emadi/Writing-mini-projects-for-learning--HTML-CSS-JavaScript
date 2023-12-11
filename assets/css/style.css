@@ -23,7 +23,8 @@
 
 * {
   font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
+  transition: all 0.2s;
 }
 
 body {
@@ -38,6 +39,10 @@ a {
 
 h2 {
   font-weight: 400;
+}
+
+h6 {
+  margin: 0;
 }
 
 ul {
@@ -107,6 +112,10 @@ h5 {
   } */
   font-size: 32px;
   margin: 40px 0px;
+}
+
+.header .position i {
+  transition: none;
 }
 
 .header .position:hover {
@@ -233,6 +242,10 @@ nav ul li:not(:last-child)::after {
   padding-left: 50px;
 }
 
+.width-section {
+  width: 880px;
+}
+
 .contact {
   display: flex;
 }
@@ -355,4 +368,85 @@ nav ul li:not(:last-child)::after {
   display: inline-block;
   padding: 4px 16px;
   margin: 0px 16px 18px 0px;
+}
+
+.project {
+  border: 1px solid #a0a0a0;
+  border-radius: 8px;
+  padding: 11px;
+  width: 26%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project .title {
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+.project .description {
+  font-size: 13px;
+}
+
+.width-section .tech {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.width-section .tech ul li {
+  display: inline-block;
+}
+
+.width-section .tech ul li img {
+  width: 25px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  margin-bottom: 36px;
+}
+
+.project:not(:last-child) {
+  margin-right: 20px;
+}
+
+.project .buttons {
+  display: flex;
+}
+
+.project .buttons a {
+  width: 50%;
+  color: #333533;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.project .buttons a:last-child,
+.project .buttons a:hover:first-child {
+  border: 1px solid #333533;
+}
+
+.project .buttons a:last-child {
+  margin-left: 4px;
+}
+
+.project .buttons a:hover:last-child {
+  color: #fafafa;
+  background-color: #333533;
+}
+
+.project .buttons a i {
+  margin-right: 5px;
 }
