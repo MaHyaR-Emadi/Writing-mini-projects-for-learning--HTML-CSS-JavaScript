@@ -314,3 +314,45 @@ nav ul li:not(:last-child)::after {
 .socials li:hover span.github {
   background-image: url("../Icons/Social/github-hover.png");
 }
+
+.Skills li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #333533;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 10px 24px;
+}
+
+/* .Skills li span {
+  display: flex;
+  align-items: center;
+} */
+
+.Skills li img {
+  vertical-align: middle;
+  margin-right: 7px;
+}
+
+.Skills .title {
+  font-weight: 500;
+}
+
+.Skills li i {
+  padding: 10px 12px;
+  border-left: 1px solid #a0a0a0;
+}
+
+.Skills .tech {
+  width: 150px;
+  height: 36px;
+}
+
+.other-skills li {
+  border: 1px solid #a0a0a0;
+  border-radius: 24px;
+  display: inline-block;
+  padding: 4px 16px;
+  margin: 0px 16px 18px 0px;
+}
