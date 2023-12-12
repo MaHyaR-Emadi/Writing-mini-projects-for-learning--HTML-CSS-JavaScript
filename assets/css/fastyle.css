@@ -1,0 +1,43 @@
+/* Global */
+
+@font-face {
+    font-family: "Vazir";
+    src: url("/assets/Fonts/WOFF/Vazir-Light.woff") format("woff"),
+    url("/assets/Fonts/TTF/Vazir-Light.ttf") format("ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Vazir";
+    src: url("/assets/Fonts/WOFF/Vazir-Regular.woff") format("woff"),
+    url("/assets/Fonts/TTF/Vazir-Regular.ttf") format("ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Vazir";
+    src: url("/assets/Fonts/WOFF/Vazir-Medium.woff") format("woff"),
+    url("/assets/Fonts/TTF/Vazir-Medium.ttf") format("ttf");
+    font-weight: 500;
+}
+
+* {
+    font-family: "Vazir";
+    direction: rtl;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Container */
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+/* Header */
+
+.header{
+    background-color: #333533 ;
+    height: 376px;
+}
