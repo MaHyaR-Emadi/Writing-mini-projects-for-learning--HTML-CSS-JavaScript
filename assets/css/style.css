@@ -65,6 +65,7 @@ h5 {
   display: flex;
   justify-content: center;
   padding: 45px 0px;
+  /* need to be fix */
 }
 
 /* Header */
