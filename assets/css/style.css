@@ -206,9 +206,9 @@ nav ul li {
 }
 
 nav ul li .marker {
-  width: 42px;
-  height: 42px;
-  line-height: 42px;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
   border: 1px solid #333533;
   border-radius: 50%;
   display: inline-block;
@@ -233,7 +233,7 @@ nav ul li:not(:last-child)::after {
   display: block;
   height: 48px;
   border-left: 1px dashed #333533;
-  margin: 16px 0px 16px 21px;
+  margin: 16px 0px 16px 25px;
 }
 
 /* Section */
@@ -273,7 +273,7 @@ nav ul li:not(:last-child)::after {
 
 .socials li {
   display: inline-block;
-  margin-right: 24px;
+  margin-right: 32px;
 }
 
 .socials li a span {
