@@ -23,7 +23,6 @@
 
 * {
   font-family: "Poppins", sans-serif;
-  /* box-sizing: border-box; */
   transition: all 0.2s;
 }
 
@@ -31,6 +30,7 @@ body {
   background-color: #fafafa;
   margin: 0px;
   color: #333533;
+  overflow-x: hidden;
 }
 
 a {
@@ -64,6 +64,7 @@ h5 {
   display: flex;
   justify-content: center;
   padding: 45px 0px;
+  /* need to be fix */
 }
 
 /* Header */
@@ -204,9 +205,9 @@ nav ul li {
 }
 
 nav ul li .marker {
-  width: 42px;
-  height: 42px;
-  line-height: 42px;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
   border: 1px solid #333533;
   border-radius: 50%;
   display: inline-block;
@@ -231,7 +232,7 @@ nav ul li:not(:last-child)::after {
   display: block;
   height: 48px;
   border-left: 1px dashed #333533;
-  margin: 16px 0px 16px 21px;
+  margin: 16px 0px 16px 25px;
 }
 
 /* Section */
@@ -271,7 +272,7 @@ nav ul li:not(:last-child)::after {
 
 .socials li {
   display: inline-block;
-  margin-right: 24px;
+  margin-right: 32px;
 }
 
 .socials li a span {
@@ -366,7 +367,7 @@ nav ul li:not(:last-child)::after {
   border: 1px solid #a0a0a0;
   border-radius: 24px;
   display: inline-block;
-  padding: 4px 16px;
+  padding: 8px 29px;
   margin: 0px 16px 18px 0px;
 }
 
