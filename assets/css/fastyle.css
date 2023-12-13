@@ -41,10 +41,14 @@ h2 {
 }
 
 h5 {
-    margin-bottom: 5px;
-    color: #a0a0a0;
-    font-weight: 500;
-    font-size: 18px;
+   margin-bottom: 5px;
+   color: #a0a0a0;
+   font-weight: 500;
+   font-size: 18px;
+}
+
+h6 {
+   margin: 0;
 }
 
 ul {
@@ -123,18 +127,18 @@ nav ul li:not(:last-child)::after {
 /* Header */
 
 @keyframes float {
-	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
-	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-		transform: translatey(-20px);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
+   0% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+   }
+   50% {
+      box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+      transform: translatey(-20px);
+   }
+   100% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+   }
 }
 
 .header img {
@@ -157,15 +161,15 @@ nav ul li:not(:last-child)::after {
 }
 
 @keyframes scaletitle {
-    0% {
+   0% {
       font-size: 32px;
-    }
-  }
-  @keyframes scaleposition {
-    0% {
+   }
+}
+@keyframes scaleposition {
+   0% {
       font-size: 10px;
-    }
-  }
+   }
+}
 
 .header .title h1 {
    color: #ffd100;
@@ -180,7 +184,7 @@ nav ul li:not(:last-child)::after {
    font-size: 32px;
    margin: 40px 0px;
    animation: scaleposition 0.6s ease-in-out;
-  transition: all 0.7s ease-in-out;
+   transition: all 0.7s ease-in-out;
 }
 
 .header .button {
@@ -204,10 +208,8 @@ nav ul li:not(:last-child)::after {
 .header .position i,
 .header .button i {
    color: #ffd100;
-    transition: none;
-  }
-   /* margin-left: 6px;s */
-
+   transition: none;
+}
 
 .header .button i {
    margin-left: 6px;
@@ -228,80 +230,204 @@ nav ul li:not(:last-child)::after {
 }
 
 .contact {
-    display: flex;
+   display: flex;
 }
 
 .contact div {
-    width: 50%;
+   width: 50%;
 }
 
 .contact p {
-    margin-top: 0;
+   margin-top: 0;
 }
 
 .contact p i {
-    margin-right: 10px;
-    font-size: 16px;
-    color: #a0a0a0;
-    cursor: pointer;
+   margin-right: 10px;
+   font-size: 16px;
+   color: #a0a0a0;
+   cursor: pointer;
 }
 
 .contact p i:hover {
-    color: #333533;
+   color: #333533;
 }
 
 .socials li a span,
-.socials li  {
-    display: inline-block;
-    margin-left: 32px;
-    width: 56px;
-    height: 56px;
+.socials li {
+   display: inline-block;
+   margin-left: 32px;
+   width: 56px;
+   height: 56px;
 }
 
 .socials li span.linkedin {
-    background-image: url("../Icons/Social/linkedin.png");
-  }
-  
-  .socials li:hover span.linkedin {
-    background-image: url("../Icons/Social/linkedin-hover.png");
-  }
-  
-  .socials li span.twitter {
-    background-image: url("../Icons/Social/twitter.png");
-  }
-  
-  .socials li:hover span.twitter {
-    background-image: url("../Icons/Social/twitter-hover.png");
-  }
-  
-  .socials li span.stackoverflow {
-    background-image: url("../Icons/Social/stackoverflow.png");
-  }
-  
-  .socials li:hover span.stackoverflow {
-    background-image: url("../Icons/Social/stackoverflow-hover.png");
-  }
-  
-  .socials li span.whatsapp {
-    background-image: url("../Icons/Social/whatsapp.png");
-  }
-  
-  .socials li:hover span.whatsapp {
-    background-image: url("../Icons/Social/whatsapp-hover.png");
-  }
-  
-  .socials li span.telegram {
-    background-image: url("../Icons/Social/telegram.png");
-  }
-  
-  .socials li:hover span.telegram {
-    background-image: url("../Icons/Social/telegram-hover.png");
-  }
-  
-  .socials li span.github {
-    background-image: url("../Icons/Social/github.png");
-  }
-  
-  .socials li:hover span.github {
-    background-image: url("../Icons/Social/github-hover.png");
-  }
+   background-image: url("../Icons/Social/linkedin.png");
+}
+
+.socials li:hover span.linkedin {
+   background-image: url("../Icons/Social/linkedin-hover.png");
+}
+
+.socials li span.twitter {
+   background-image: url("../Icons/Social/twitter.png");
+}
+
+.socials li:hover span.twitter {
+   background-image: url("../Icons/Social/twitter-hover.png");
+}
+
+.socials li span.stackoverflow {
+   background-image: url("../Icons/Social/stackoverflow.png");
+}
+
+.socials li:hover span.stackoverflow {
+   background-image: url("../Icons/Social/stackoverflow-hover.png");
+}
+
+.socials li span.whatsapp {
+   background-image: url("../Icons/Social/whatsapp.png");
+}
+
+.socials li:hover span.whatsapp {
+   background-image: url("../Icons/Social/whatsapp-hover.png");
+}
+
+.socials li span.telegram {
+   background-image: url("../Icons/Social/telegram.png");
+}
+
+.socials li:hover span.telegram {
+   background-image: url("../Icons/Social/telegram-hover.png");
+}
+
+.socials li span.github {
+   background-image: url("../Icons/Social/github.png");
+}
+
+.socials li:hover span.github {
+   background-image: url("../Icons/Social/github-hover.png");
+}
+
+.skills li {
+   border: 1px solid #333533;
+   border-radius: 8px;
+   margin-bottom: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 12px;
+}
+
+.skills li img {
+   vertical-align: middle;
+   margin-left: 8px;
+}
+
+.skills .title {
+   font-weight: 500;
+}
+
+.skills li i {
+   padding: 10px 12px;
+   border-right: 1px solid #a0a0a0;
+}
+
+.skills .tech {
+   width: 100px;
+   height: 36px;
+}
+
+.other-skills li {
+   border: 1px solid #a0a0a0;
+   border-radius: 24px;
+   display: inline-block;
+   padding: 8px 24px;
+   margin: 0px 16px 18px 16px;
+}
+
+.project {
+   border: 1px solid #333533;
+   border-radius: 8px;
+   padding: 10px;
+   width: 25%;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 36px;
+}
+
+.project .h6title {
+   font-weight: 500;
+   font-size: 20px;
+   margin-top: 12px;
+}
+
+.project .description {
+   font-size: 13px;
+   line-height: 20px;
+}
+
+.width-section {
+   width: 880px;
+}
+
+/* check later */
+.project .techused {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 14px;
+   font-weight: 500;
+}
+
+.project .techused ul li {
+   display: inline-block;
+}
+
+.project .techused ul li img {
+   width: 25px;
+}
+
+.project .buttons {
+   display: flex;
+}
+
+.project .buttons a {
+   width: 50%;
+   padding: 4px 8px;
+   /* padding: 8px 16px; */
+   border: 1px solid transparent;
+   text-align: center;
+}
+
+.project .buttons a:first-child,
+.project .buttons a:last-child:hover {
+   border: 1px solid #333533;
+   border-radius: 4px;
+} 
+.project .buttons a:last-child {
+   margin-right: 4px;
+ }
+
+.project .buttons a:first-child:hover {
+   color: #fafafa;
+   background-color: #333533;
+}
+
+.box-button {
+   color: #333533;
+   font-size: 13px;
+   font-weight: 500;
+}
+
+.box-button i {
+   margin-left: 5px;
+}
+
+.projects {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.project:not(:last-child){
+   margin-left: 20px;
+ }
