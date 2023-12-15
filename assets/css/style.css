@@ -30,7 +30,8 @@ body {
   background-color: #fafafa;
   margin: 0px;
   color: #333533;
-  overflow-x: hidden;
+  overflow-x: clip ;
+  
 }
 
 a {
