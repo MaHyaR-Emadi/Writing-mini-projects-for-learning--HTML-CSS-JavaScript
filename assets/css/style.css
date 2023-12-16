@@ -196,16 +196,20 @@ h5 {
 
 /* Nav Bar */
 
-nav {
+.mobile-nav {
+  display: none;
+}
+
+.container nav {
   width: 250px;
   font-size: 24px;
 }
 
-nav ul li {
+.container nav ul li {
   cursor: pointer;
 }
 
-nav ul li .marker {
+.container nav ul li .marker {
   width: 48px;
   height: 48px;
   line-height: 48px;
@@ -217,18 +221,18 @@ nav ul li .marker {
   margin-right: 12px;
 }
 
-nav ul li.active .marker,
-nav ul li:hover .marker {
+.container nav ul li.active .marker,
+.container nav ul li:hover .marker {
   background-color: #333533;
   color: #ffd100;
   font-size: 22px;
 }
 
-nav li.active {
+.container nav li.active {
   font-weight: 500;
 }
 
-nav ul li:not(:last-child)::after {
+.container nav ul li:not(:last-child)::after {
   content: "";
   display: block;
   height: 48px;

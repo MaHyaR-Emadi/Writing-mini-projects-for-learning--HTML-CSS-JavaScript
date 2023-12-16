@@ -85,4 +85,27 @@
    .project:not(:last-child) {
       margin-right: 0;
    }
+.mobile-nav {
+   display: block;
+   background-color: #333533;
+   color: #fafafa;
+}
+.mobile-nav ul {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 0;
+}
+.mobile-nav ul li {
+   padding-top: 15px;
+   padding-bottom: 15px;
+   text-align: center ;
+   flex: 1;
+}
+.mobile-nav ul li i {
+margin-right: 5px;
+}
+.mobile-nav ul li.active {
+   color: #ffd100;
+   border-bottom: 4px solid #ffd100;
+}
 }
