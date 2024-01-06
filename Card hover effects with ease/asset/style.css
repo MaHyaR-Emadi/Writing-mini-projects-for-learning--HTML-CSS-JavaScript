@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #36768c;
+    font-family: 'roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.card {
+    width: 320px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid #fff;
+    position: relative;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    /* aval 0 bod in -100% ro baraye in gozasht ke matn bere biroon az safhe ta ba hover move bedim be card */
+    right: -100%;
+    position: absolute;
+    background: #1f3d4738;
+    /* blur kardan e matne hover */
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #fff;
+    padding: 30px;
+    /* bade inke card-info va card-btn ro nevesht omad in ghesmat ro takmil kard . baes mishe eleman ha
+     bian vasat .  */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+
+.card:hover .card-body{
+    right: 0;
+}
+
+.card-title{
+    /* vaghti kalamate uppercase nabod onaro tabdil mikone */
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.card-sub-title{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.card-info{
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400;
+}
+
+.card-btn {
+    color: #1f3d47;
+    background: #8fabba;
+    padding: 10px 20px;
+    border-radius: 5px;
+    /* chon display card-body ro flex kardim btn kole width ro gereft . inja control mikonimesh */
+    width: 120px;
+    border: none;
+    outline: none;
+    font-weight: 500 ;
+    cursor: pointer;
+}
