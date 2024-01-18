@@ -1,0 +1,58 @@
+body {
+    --niche-color: #9F7D5F;
+    background-color: #1a1a1a;
+    height: 200vh;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: General Sans;
+    font-size: clamp(3.438rem, 9vw + 1rem, 8.125rem);
+    font-weight: 700;
+    line-height: 101.1%;
+    text-transform: uppercase;
+    
+  }
+  h1 .letter {
+      position: relative; 
+      display: inline-block;
+    background: linear-gradient(
+      108deg,
+      #fff 13.51%,
+      rgba(255, 255, 255, 0) 91.98%
+    );
+    background-clip: text;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  h1 .letter::before {
+    position: absolute;
+    color: var(--niche-color);
+    font-family: Pacifico;
+    font-size: clamp(1.25rem, 1vw + 1rem, 1.875rem);
+    line-height: 91.125%;
+    text-transform: none;
+    font-weight: 400;
+    -webkit-text-fill-color: var(--niche-color);
+    animation: showUp2 1s forwards ease-in-out;
+  }
+  
+  h1 .letter-4::before {
+    content: "frontend";
+    transform: translate(-25px, -18px) rotate(-16.289deg);
+    animation-delay: 0.7s;
+  }
+  h1 .letter-12::before {
+    content: "design";
+    transform: translate(100%, 5px) rotate(15deg);
+    animation-delay: 0.5s;
+    right: 0;
+  }
+  h1 .letter-8::before {
+    content: "writing";
+    transform: translate(-100%, 2px) rotate(-15deg);
+    left: 15px;
+    animation-delay: 0.9s;
+  }
+  
